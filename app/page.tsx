@@ -35,3 +35,6 @@ export default function HomePage() {
           Please scan the QR code placed on your table using your phone's camera. You'll be able to view our digital menu and place your order directly!
         </p>
       </div>
+    </div>
+  );
+}
