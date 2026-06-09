@@ -9,7 +9,7 @@ export default function HomePage() {
       {/* ✅ Asli Logo Section */}
       <div className="w-32 h-32 mb-6 rounded-full overflow-hidden relative shadow-xl shadow-orange-600/20 border-4 border-white">
         <Image 
-          src="/cafelogo1.jepg" 
+          src="public/cafelogo1.jpeg" 
           alt="Cafe Cookies Logo"
           fill
           className="object-cover"
