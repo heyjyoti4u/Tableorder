@@ -28,14 +28,6 @@ export default function HomePage() {
           Please scan the QR code placed on your table using your phone's camera. You'll be able to view our digital menu and place your order directly!
         </p>
       </div>
-
-      {/* Hidden Admin Link (For your convenience) */}
-      <Link 
-        href="/admin/dashboard" 
-        className="mt-12 text-xs font-semibold text-slate-400 hover:text-orange-500 transition-colors"
-      >
-        Admin Login
-      </Link>
     </div>
   );
 }
