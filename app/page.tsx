@@ -1,13 +1,20 @@
-import { ChefHat, QrCode } from "lucide-react";
+import { QrCode } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image"; // ✅ Next.js Image component import kiya
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center p-6 font-sans">
       
-      {/* Logo Section */}
-      <div className="w-24 h-24 bg-orange-600 rounded-full flex items-center justify-center mb-6 shadow-xl shadow-orange-600/20">
-        <ChefHat className="w-12 h-12 text-white" />
+      {/* ✅ Asli Logo Section */}
+      <div className="w-32 h-32 mb-6 rounded-full overflow-hidden relative shadow-xl shadow-orange-600/20 border-4 border-white">
+        <Image 
+          src="/cafelogo1.jepg" 
+          alt="Cafe Cookies Logo"
+          fill
+          className="object-cover"
+          priority // Faster loading ke liye
+        />
       </div>
       
       <h1 className="text-4xl font-black text-slate-900 mb-2">Cafe Cookies</h1>
@@ -28,6 +35,3 @@ export default function HomePage() {
           Please scan the QR code placed on your table using your phone's camera. You'll be able to view our digital menu and place your order directly!
         </p>
       </div>
-    </div>
-  );
-}
